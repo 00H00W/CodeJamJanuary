@@ -6,21 +6,30 @@
   font-weight: 200;
   font-style: normal;
   background-color: #befaff;
+  background: linear-gradient(
+    90deg,
+    rgba(190, 250, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: rgba(40, 100, 105, 1);
 }
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 48px;
   background-color: #fff;
   background: linear-gradient(
     90deg,
-    rgba(190, 250, 255, 1) 74%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(0, 0, 0, 0.1966036414565826) 0% rgba(255, 255, 255, 1) 100%
   );
 }
 
 .header__logo {
+  background-image: url("./images/3.jpeg");
+  background-position: center;
+  background-size: cover;
   height: 48px;
   width: 48px;
 }
@@ -31,22 +40,31 @@
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  width: 40vw;
   margin-right: 5vw;
 }
 
 .nav__link {
   text-wrap: nowrap;
   margin: 0 16px;
+  width: 64px;
+  text-decoration: none;
+  opacity: 0.7;
+  color: rgba(40, 100, 105, 1);
+  transition: color 0.4s;
+}
+
+.nav__link:hover {
+  color: black;
 }
 
 .search {
   background-color: #befaff;
   background: linear-gradient(
     90deg,
-    rgba(190, 250, 255, 1) 74%,
+    rgba(190, 250, 255, 1) 50%,
     rgba(255, 255, 255, 1) 100%
   );
+  /* background-image: url("./images/noaa-rxlx9Yi0298-unsplash.jpg"); */
 }
 
 .search__header {
@@ -55,12 +73,33 @@
   text-align: center;
 }
 
+.search__title {
+  margin: 72px 0 0 0;
+}
+
+.search__result {
+}
+.search__result-title {
+  background-color: #befaff;
+  box-shadow: 0 15px 15px rgba(40, 100, 105, 0.1);
+  padding-left: 48px;
+}
+
+.search__result-discription {
+  padding: 0 0 0 72px;
+}
+
 .search__results-container {
   list-style: none;
+  padding: 0;
 }
 
 .articles {
   background-color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.1966036414565826) 100% rgba(255, 255, 255, 1) 0%
+  );
 }
 
 .articles__header {
@@ -75,4 +114,8 @@
 
 .articles__card {
   width: 300px;
+}
+
+.footer {
+  text-align: center;
 }
