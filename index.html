@@ -2,12 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CodeJamJanuary</title>
+
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sh3ltr</title>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body class="page">
+    <!-- //HEADER -->
+    <header class="header">
+      <img src="" alt="" class="header__logo" />
+      <!-- //--NAV -->
+      <nav class="nav">
+        <ul class="nav__links">
+          <li>
+            <a href="#" class="nav__link">Search </a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">Articles</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- //SEARCH -->
+    <section class="search">
+      <div class="search__header">
+        <h1 class="search__title">Sh3ltr</h1>
+        <p class="search__subtitle">
+          Find a place to stay in times of disaster
+        </p>
+        <form action="" class="search">
+          <label for="search-input" class="form__label">
+            Your Location:
+            <input
+              class="text__input"
+              required
+              type="text"
+              placeholder="los angeles"
+              id="search-input"
+            />
+          </label>
+        </form>
+      </div>
+      <div class="search__results">
+        <ul class="search__results-container">
+          <li class="search__result">
+            <h3 class="search__result-title">Community Shelter</h3>
+            <p class="search__result-discription">Shelter description</p>
+          </li>
+          <li class="search__result">
+            <h3 class="search__result-title">Community Shelter</h3>
+            <p class="search__result-discription">Shelter description</p>
+          </li>
+          <li class="search__result">
+            <h3 class="search__result-title">Community Shelter</h3>
+            <p class="search__result-discription">Shelter description</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- //ARTICLES -->
+    <section class="articles">
+      <div class="articles__header">
+        <h2 class="articles__title">Stay Infomed</h2>
+        <p class="articles__subtitle">
+          The latest emergency alerts in your area
+        </p>
+      </div>
+      <ul class="articles__cards-container">
+        <li class="articles__card">
+          <h3 class="atricle__title">Article Title</h3>
+          <p class="article__content">Article content.</p>
+        </li>
+        <li class="articles__card">
+          <h3 class="atricle__title">Article Title</h3>
+          <p class="article__content">Article content.</p>
+        </li>
+        <li class="articles__card">
+          <h3 class="atricle__title">Article Title</h3>
+          <p class="article__content">Article content.</p>
+        </li>
+        <li class="articles__card">
+          <h3 class="atricle__title">Article Title</h3>
+          <p class="article__content">Article content.</p>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer">© Code Heroes 2025</footer>
   </body>
 </html>
