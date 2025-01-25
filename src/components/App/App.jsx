@@ -5,8 +5,8 @@ import Footer from "../Footer/Footer";
 
 function App() {
   return (
-    <div className="app">
-      <div className="app__content">
+    <div className="page">
+      <div className="page__content">
         <Header></Header>
         <Main></Main>
         <Footer></Footer>

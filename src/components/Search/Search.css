@@ -1,0 +1,18 @@
+.search {
+  background-color: #befaff;
+  background: linear-gradient(
+    90deg,
+    rgba(190, 250, 255, 1) 74%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.search__header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.search__results-container {
+  list-style: none;
+}

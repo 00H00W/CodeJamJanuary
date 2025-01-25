@@ -1,0 +1,17 @@
+.articles {
+  background-color: #fff;
+}
+
+.articles__header {
+  text-align: center;
+}
+
+.articles__cards-container {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.articles__card {
+  width: 300px;
+}

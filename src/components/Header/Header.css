@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  background-color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(190, 250, 255, 1) 74%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.header__logo {
+  height: 48px;
+  width: 48px;
+}
+
+/* rename these to be part of the header block */
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  width: 40vw;
+  margin-right: 5vw;
+}
+
+.nav__link {
+  text-wrap: nowrap;
+  margin: 0 16px;
+}
