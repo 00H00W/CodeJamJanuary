@@ -3,21 +3,21 @@ import "./Header.css";
 function Header() {
   return (
     <header className="header">
-      <img src="" alt="" className="header__logo" />
+      <div className="header__logo"></div>
       <nav className="nav">
         <ul className="nav__links">
           <li>
-            <a href="#" className="nav__link">
+            <a href="#nav-search-target" className="nav__link">
               Search
             </a>
           </li>
           <li>
-            <a href="#" className="nav__link">
+            <a href="#nav-articles-target" className="nav__link">
               Articles
             </a>
           </li>
           <li>
-            <a href="#" className="nav__link">
+            <a href="#nav-contact-target" className="nav__link">
               Contact Us
             </a>
           </li>

@@ -1,18 +1,81 @@
-.search {
-  background-color: #befaff;
-  background: linear-gradient(
-    90deg,
-    rgba(190, 250, 255, 1) 74%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-
 .search__header {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 0 0 160px 0;
+
+  background-image: url("../../assets/noaa-rxlx9Yi0298-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search__form,
+.search__title,
+.search__subtitle {
+  z-index: 1;
+  font-weight: 400;
+}
+
+.text__input {
+  border: none;
+  border-radius: 16px;
+  padding: 4px 16px;
+}
+
+.search__title {
+  font-size: 64px;
+  margin: 240px 0 72px 0;
+  text-shadow: 0 0 72px rgba(220, 220, 220, 0.9);
+  font-weight: 600;
+}
+
+.search__overlay {
+  background: rgb(220, 220, 220);
+  background: linear-gradient(
+    180deg,
+    rgba(220, 220, 220, 0.5) 30%,
+    rgba(220, 220, 220, 1) 100%
+  );
+  /* opacity: 0.9; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.search .search__results {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .search__results-container {
   list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  max-width: 1050px;
+}
+
+/* card  */
+.search__result {
+  width: 240px;
+  height: 320px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s;
+}
+
+.search__result:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.search__result-discription {
+  padding: 0 0 0 72px;
 }
