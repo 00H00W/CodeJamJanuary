@@ -20,6 +20,11 @@ function Search() {
               id="search-input"
             />
           </label>
+          <label htmlFor="search-input" className="form__btn-label">
+            <button htmlFor="search-input" className="search__btn">
+              Search
+            </button>
+          </label>
         </form>
       </div>
       <div className="search__results">
