@@ -10,6 +10,11 @@
   text-shadow: 1px 1px 5px rgba(220, 220, 220, 0.5);
 }
 
+::selection {
+  background: yellow; /* Change the background color of the selected text */
+  color: black; /* Change the text color of the selected text */
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
