@@ -82,6 +82,7 @@
 
 /* card  */
 .search__result {
+  position: relative;
   width: 240px;
   height: 320px;
   background: #fff;
@@ -95,6 +96,48 @@
   cursor: pointer;
 }
 
-.search__result-discription {
-  padding: 0 0 0 72px;
+.search__result-name {
+  padding: 0 0 0 16px;
+}
+
+.search__result-address-title,
+.search__result-phone-title,
+.search__result-web-title {
+  padding: 0 16px 0 24px;
+  margin: 16px 0 0 0;
+}
+
+.search__result-address,
+.search__result-web,
+.search__result-phone-num {
+  padding: 0 16px 0 32px;
+  margin: 0 0 0 0;
+}
+
+.search__result-img {
+}
+
+.search__result-web {
+  position: absolute;
+  bottom: 16px;
+  padding: 16px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-16px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.search__result {
+  animation: bounce 0.4s ease-in-out;
 }

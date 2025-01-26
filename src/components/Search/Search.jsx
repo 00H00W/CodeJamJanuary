@@ -30,24 +30,58 @@ function Search() {
       <div className="search__results">
         <ul className="search__results-container">
           <li className="search__result">
-            <h3 className="search__result-title">Community Shelter</h3>
-            <p className="search__result-discription">Shelter description</p>
+            <h3 className="search__result-name">Community Shelter</h3>
+            <p className="search__result-address-title">Address:</p>
+            <p className="search__result-address">42 Wallaby Way, Sydney</p>
+            <p className="search__result-phone-title">Phone:</p>
+            <p className="search__result-phone-num">(555) 012-3456</p>
+            {/* we add the image here if possible */}
+            <p className="search__result-web"> Click to visit website</p>
           </li>
           <li className="search__result">
-            <h3 className="search__result-title">Community Shelter</h3>
-            <p className="search__result-discription">Shelter description</p>
+            <h3 className="search__result-name">Community Shelter</h3>
+            <p className="search__result-address-title">Address:</p>
+            <p className="search__result-address">42 Wallaby Way, Sydney</p>
+            <p className="search__result-phone-title">Phone:</p>
+            <p className="search__result-phone-num">(555) 012-3456</p>
+            {/* we add the image here if possible */}
+            <p className="search__result-web"> Click to visit website</p>
           </li>
           <li className="search__result">
-            <h3 className="search__result-title">Community Shelter</h3>
-            <p className="search__result-discription">Shelter description</p>
+            <h3 className="search__result-name">Community Shelter</h3>
+            <p className="search__result-address-title">Address:</p>
+            <p className="search__result-address">42 Wallaby Way, Sydney</p>
+            <p className="search__result-phone-title">Phone:</p>
+            <p className="search__result-phone-num">(555) 012-3456</p>
+            {/* we add the image here if possible */}
+            <p className="search__result-web"> Click to visit website</p>
           </li>
           <li className="search__result">
-            <h3 className="search__result-title">Community Shelter</h3>
-            <p className="search__result-discription">Shelter description</p>
+            <h3 className="search__result-name">Community Shelter</h3>
+            <p className="search__result-address-title">Address:</p>
+            <p className="search__result-address">42 Wallaby Way, Sydney</p>
+            <p className="search__result-phone-title">Phone:</p>
+            <p className="search__result-phone-num">(555) 012-3456</p>
+            {/* we add the image here if possible */}
+            <p className="search__result-web"> Click to visit website</p>
           </li>
           <li className="search__result">
-            <h3 className="search__result-title">Community Shelter</h3>
-            <p className="search__result-discription">Shelter description</p>
+            <h3 className="search__result-name">Community Shelter</h3>
+            <p className="search__result-address-title">Address:</p>
+            <p className="search__result-address">42 Wallaby Way, Sydney</p>
+            <p className="search__result-phone-title">Phone:</p>
+            <p className="search__result-phone-num">(555) 012-3456</p>
+            {/* we add the image here if possible */}
+            <p className="search__result-web"> Click to visit website</p>
+          </li>
+          <li className="search__result">
+            <h3 className="search__result-name">Community Shelter</h3>
+            <p className="search__result-address-title">Address:</p>
+            <p className="search__result-address">42 Wallaby Way, Sydney</p>
+            <p className="search__result-phone-title">Phone:</p>
+            <p className="search__result-phone-num">(555) 012-3456</p>
+            {/* we add the image here if possible */}
+            <p className="search__result-web"> Click to visit website</p>
           </li>
         </ul>
       </div>
