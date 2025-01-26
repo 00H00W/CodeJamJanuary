@@ -5,13 +5,9 @@
   font-family: "Poppins", serif;
   font-weight: 200;
   font-style: normal;
-  background-color: #befaff;
-  background: linear-gradient(
-    90deg,
-    rgba(190, 250, 255, 1) 50%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: rgba(220, 220, 220, 1);
   color: rgba(40, 100, 105, 1);
+  text-shadow: 1px 1px 5px rgba(220, 220, 220, 0.5);
 }
 
 .header {
@@ -19,19 +15,24 @@
   flex-wrap: wrap;
   justify-content: space-between;
   height: 48px;
-  background-color: #fff;
+  background: rgb(255, 255, 255);
   background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.1966036414565826) 0% rgba(255, 255, 255, 1) 100%
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(240, 240, 240, 1) 100%
   );
+  box-shadow: rgba(0, 0, 0, 0.3);
+  font-weight: 200;
 }
 
 .header__logo {
   background-image: url("./images/3.jpeg");
   background-position: center;
   background-size: cover;
-  height: 48px;
-  width: 48px;
+  height: 40px;
+  width: 40px;
+  opacity: 0.7;
+  margin: 4px;
 }
 
 .nav__links {
@@ -55,51 +56,101 @@
 
 .nav__link:hover {
   color: black;
-}
-
-.search {
-  background-color: #befaff;
-  background: linear-gradient(
-    90deg,
-    rgba(190, 250, 255, 1) 50%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  /* background-image: url("./images/noaa-rxlx9Yi0298-unsplash.jpg"); */
+  text-shadow: 3px 3px 10px rgba(40, 100, 105, 0.5);
 }
 
 .search__header {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 0 0 160px 0;
+
+  background-image: url("./images/noaa-rxlx9Yi0298-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search__form,
+.search__title,
+.search__subtitle {
+  z-index: 1;
+  font-weight: 400;
 }
 
 .search__title {
-  margin: 72px 0 0 0;
+  font-size: 64px;
+  margin: 240px 0 72px 0;
+  text-shadow: 0 0 72px rgba(220, 220, 220, 0.9);
+  font-weight: 600;
 }
 
+.search__overlay {
+  background: rgb(220, 220, 220);
+  background: linear-gradient(
+    180deg,
+    rgba(220, 220, 220, 0.4) 25%,
+    rgba(220, 220, 220, 1) 100%
+  );
+  /* opacity: 0.9; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.search .search__results {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.search__results-container {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  max-width: 1050px;
+}
+
+/* card  */
 .search__result {
+  width: 240px;
+  height: 320px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s;
+}
+
+.search__result:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 .search__result-title {
-  background-color: #befaff;
-  box-shadow: 0 15px 15px rgba(40, 100, 105, 0.1);
-  padding-left: 48px;
 }
 
 .search__result-discription {
   padding: 0 0 0 72px;
 }
 
-.search__results-container {
-  list-style: none;
-  padding: 0;
-}
-
 .articles {
-  background-color: #fff;
+  background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.1966036414565826) 100% rgba(255, 255, 255, 1) 0%
+    rgba(255, 255, 255, 1) 0%,
+    rgba(240, 240, 240, 1) 100%
   );
+  color: rgba(100, 100, 100, 0.7);
+  padding: 72px 0 72px 0;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .articles__header {
@@ -109,13 +160,29 @@
 .articles__cards-container {
   list-style: none;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 64px 0;
+  max-width: 1050px;
 }
 
 .articles__card {
-  width: 300px;
+  /* card */
+  width: 240px;
+  height: 240px;
+  background-color: rgba(220, 220, 220, 1);
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s;
+}
+
+.articles__card:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .footer {
   text-align: center;
+  padding: 32px 0;
 }
