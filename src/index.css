@@ -79,6 +79,12 @@
   font-weight: 400;
 }
 
+.text__input {
+  border: none;
+  border-radius: 16px;
+  padding: 4px 16px;
+}
+
 .search__title {
   font-size: 64px;
   margin: 240px 0 72px 0;
@@ -90,7 +96,7 @@
   background: rgb(220, 220, 220);
   background: linear-gradient(
     180deg,
-    rgba(220, 220, 220, 0.4) 25%,
+    rgba(220, 220, 220, 0.5) 30%,
     rgba(220, 220, 220, 1) 100%
   );
   /* opacity: 0.9; */
