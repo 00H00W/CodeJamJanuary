@@ -1,5 +1,17 @@
 .articles {
-  background-color: #fff;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(240, 240, 240, 1) 100%
+  );
+  color: rgba(100, 100, 100, 0.7);
+  padding: 72px 0 72px 0;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .articles__header {
@@ -9,9 +21,24 @@
 .articles__cards-container {
   list-style: none;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 64px 0;
+  max-width: 1050px;
 }
 
 .articles__card {
-  width: 300px;
+  /* card */
+  width: 240px;
+  height: 240px;
+  background-color: rgba(220, 220, 220, 1);
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s;
+}
+
+.articles__card:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
