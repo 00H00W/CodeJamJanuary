@@ -7,12 +7,12 @@ import "slick-carousel/slick/slick-theme.css";
 // Example code taken from GeeksForGeeks
 // https://www.geeksforgeeks.org/how-to-create-a-responsive-carousel-in-react-js/
 
-function Carousel({ children }) {
+function Carousel({ children, slideCount = 1 }) {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: slideCount,
     slidesToScroll: 1,
 
     appendDots: (dots) => (
