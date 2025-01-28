@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Articles from "../Articles/Articles";
 import Search from "../Search/Search";
 import Landing from "../Landing/Landing";
+import MapDisplay from "../MapDisplay/MapDisplay";
 import "./Main.css";
 
 function Main() {
