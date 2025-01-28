@@ -31,13 +31,6 @@
   margin-right: 5vw;
 }
 
-.nav__link {
-  text-wrap: nowrap;
-  margin: 0 16px;
-  width: 64px;
-  font-weight: 100;
-}
-
 .text-link {
   text-decoration: none;
   color: rgba(40, 100, 105, 1);
@@ -47,4 +40,13 @@
 .text-link:hover {
   color: black;
   text-shadow: 3px 3px 10px rgba(40, 100, 105, 0.5);
+}
+.nav__link {
+  text-wrap: nowrap;
+  margin: 0 16px;
+  width: 64px;
+  font-weight: 100;
+}
+.nav__link_active {
+  border-bottom: 4px solid rgba(40, 100, 105, 1);
 }

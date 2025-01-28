@@ -23,22 +23,25 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 32px;
   padding: 64px 0;
   max-width: 1050px;
+  width: 100%;
 }
 
 .articles__card {
   /* card */
-  width: 240px;
+  width: 100%;
   height: 240px;
   background-color: rgba(220, 220, 220, 1);
   border-radius: 8px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.4s;
 }
 
 .articles__card:hover {
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }

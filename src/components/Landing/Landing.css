@@ -11,12 +11,6 @@
   background-size: cover;
 }
 
-.search__container {
-  margin: 60px 0 60px;
-  display: flex;
-  justify-content: center;
-}
-
 .search__form,
 .search__title,
 .search__subtitle {
@@ -45,15 +39,6 @@
 
 .search__btn {
   margin: 16px 0 0 0;
-  border: none;
-  border-radius: 16px;
-  padding: 8px 16px;
-  background-color: rgba(40, 100, 105, 1);
-  color: #fff;
-  transition: background-color 0.4s;
-}
-.submit-button {
-  margin: 16px 0 0 16px;
   border: none;
   border-radius: 16px;
   padding: 8px 16px;

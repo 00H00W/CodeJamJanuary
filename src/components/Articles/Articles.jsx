@@ -10,8 +10,7 @@ function Articles() {
           The latest emergency alerts in your area
         </p>
       </div>
-      <Carousel slideCount={3}>
-        {/* feel free to mess around with this */}
+      {/* <Carousel slideCount={3}>
         <div className="articles__card">
           <h3 className="atricle__title">Article Title</h3>
           <p className="article__content">Article content.</p>
@@ -32,8 +31,8 @@ function Articles() {
           <h3 className="atricle__title">Article Title</h3>
           <p className="article__content">Article content.</p>
         </div>
-      </Carousel>
-      {/* <ul className="articles__cards-container">
+      </Carousel> */}
+      <ul className="articles__cards-container">
         <li className="articles__card">
           <h3 className="atricle__title">Article Title</h3>
           <p className="article__content">Article content.</p>
@@ -54,7 +53,7 @@ function Articles() {
           <h3 className="atricle__title">Article Title</h3>
           <p className="article__content">Article content.</p>
         </li>
-      </ul> */}
+      </ul>
     </section>
   );
 }

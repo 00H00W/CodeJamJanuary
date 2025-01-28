@@ -1,18 +1,30 @@
 import "./Search.css";
+import React from "react";
+import { search, data } from "../../Utils/ShelterAPI";
 
-function Search() {
+function Search({ searchLocation, handleSearchChange }) {
+  const [shelterData, setShelterData] = React.useState([]);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    search();
+    setShelterData(data);
+  };
+
+  React.useEffect(() => {
+    // console.log("Hello!");
+    setShelterData(data);
+  }, []);
+
   return (
     <section className="search">
-      <div className="search__header">
-        <div className="search__overlay"></div>
-        <h1 className="search__title">Sh3ltr</h1>
-        <p id="nav-search-target" className="search__subtitle">
-          Find a place to stay in times of disaster
-        </p>
-        <form action="" className="search__form">
+      {/* {console.log("Draw")} */}
+      <div className="search__container">
+        <form onSubmit={handleSubmit} action="" className="search__form_test">
           <label htmlFor="search-input" className="form__label">
             Your Location:
             <input
+              onChange={handleSearchChange}
+              value={searchLocation}
               className="text__input"
               required
               type="text"
@@ -20,15 +32,21 @@ function Search() {
               id="search-input"
             />
           </label>
-          <label htmlFor="search-input" className="form__btn-label">
-            <button htmlFor="search-input" className="search__btn">
-              Search
-            </button>
-          </label>
+          <button
+            type="submit"
+            htmlFor="search-input"
+            className="search__btn"
+            //   onClick={handleSubmit}
+          >
+            Search
+          </button>
         </form>
       </div>
       <div className="search__results">
         <ul className="search__results-container">
+          {/* {shelterData.map((item, index) => {
+            return <div key={index}>{item}</div>;
+          })} */}
           <li className="search__result">
             <h3 className="search__result-name">Community Shelter</h3>
             <p className="search__result-address-title">Address:</p>
