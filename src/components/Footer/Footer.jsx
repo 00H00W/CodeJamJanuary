@@ -92,9 +92,12 @@ function Footer() {
           </div>
         </li>
         <li className="footer__person">
-          <h4 className="footer__person-title">Person</h4>
+          <h4 className="footer__person-title">Gerard Ike</h4>
           <div className="footer__person-link-container">
-            <a href="" className="footer__person-link text-link">
+            <a
+              href="https://github.com/gerard415"
+              className="footer__person-link text-link"
+            >
               <img
                 src="/src/assets/3.jpeg"
                 alt="GitHubImg"
@@ -104,7 +107,10 @@ function Footer() {
             </a>
           </div>
           <div className="footer__person-link-container">
-            <a href="" className="footer__person-link text-link">
+            <a
+              href="https://www.linkedin.com/in/chinedum-ike/"
+              className="footer__person-link text-link"
+            >
               <img
                 src="/src/assets/3.jpeg"
                 alt="LinkedInImg"

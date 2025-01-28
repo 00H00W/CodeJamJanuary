@@ -48,3 +48,49 @@
   color: black;
   text-shadow: 3px 3px 10px rgba(40, 100, 105, 0.5);
 }
+
+.link-1,
+.link-2,
+.link-3 {
+  position: relative;
+  left: -64px;
+  opacity: 0;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.link-1 {
+  animation-name: fadeInRight-1;
+  animation-delay: 0s;
+}
+
+.link-2 {
+  animation-name: fadeInRight-2;
+  animation-delay: 0.2s;
+}
+
+.link-3 {
+  animation-name: fadeInRight-3;
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInRight-1 {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight-2 {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight-3 {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
