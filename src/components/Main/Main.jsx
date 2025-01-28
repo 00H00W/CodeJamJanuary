@@ -1,5 +1,6 @@
 import Articles from "../Articles/Articles";
 import Search from "../Search/Search";
+import MapDisplay from "../MapDisplay/MapDisplay";
 import "./Main.css";
 
 function Main() {
@@ -7,6 +8,7 @@ function Main() {
     <main>
       <Search />
       <Articles />
+      <MapDisplay />
     </main>
   );
 }
