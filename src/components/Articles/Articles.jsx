@@ -34,8 +34,11 @@ function Articles() {
       </Carousel> */}
       <ul className="articles__cards-container">
         <li className="articles__card">
-          <h3 className="atricle__title">Article Title</h3>
-          <p className="article__content">Article content.</p>
+          <div className="articles__container">
+            <h3 className="atricle__title">Article Title</h3>
+            <p className="article__content">Article content.</p>
+          </div>
+          <div className="articles__img"></div>
         </li>
         <li className="articles__card">
           <h3 className="atricle__title">Article Title</h3>

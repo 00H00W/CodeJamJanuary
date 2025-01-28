@@ -83,7 +83,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: scroll;
+
+  max-height: 100%;
+  margin: 32px;
 }
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: blue;
+}
+
+.testing {
+  width: 100%;
+  height: 100%;
+}
+
+/* .map {
+  min-width: 200px;
+  max-height: 100%;
+} */
 
 .search__results-container {
   list-style: none;
@@ -97,8 +117,9 @@
 
 /* card  */
 .search__result {
+  margin: 16px;
   position: relative;
-  width: 240px;
+  width: 100%;
   height: 320px;
   background: #fff;
   border-radius: 8px;
