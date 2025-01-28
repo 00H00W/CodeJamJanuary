@@ -13,10 +13,10 @@ function Landing({ searchLocation, handleSearchChange }) {
   };
 
   return (
-    <section className="search">
-      <div className="search__header">
-        <div className="search__overlay"></div>
-        <h1 className="search__title">Sh3ltr</h1>
+    <section className="hero">
+      <div className="hero__header">
+        <div className="hero__overlay"></div>
+        <h1 className="hero__title">Sh3ltr</h1>
         <p id="nav-search-target" className="search__subtitle">
           Find a place to stay in times of disaster
         </p>
@@ -26,7 +26,7 @@ function Landing({ searchLocation, handleSearchChange }) {
             <input
               onChange={handleSearchChange}
               value={searchLocation}
-              className="text__input"
+              className="search__input"
               required
               type="text"
               placeholder="los angeles"

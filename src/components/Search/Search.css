@@ -1,14 +1,4 @@
-.search__header {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 0 160px 0;
-
-  background-image: url("../../assets/noaa-rxlx9Yi0298-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.search {
 }
 
 .search__container {
@@ -20,8 +10,7 @@
 .search__form,
 .search__title,
 .search__subtitle {
-  z-index: 1;
-  font-weight: 400;
+  /* new font-style: ; */
 }
 
 .search__title {
@@ -44,27 +33,10 @@
 }
 
 .search__btn {
-  margin: 16px 0 0 0;
-  border: none;
-  border-radius: 16px;
-  padding: 8px 16px;
-  background-color: rgba(40, 100, 105, 1);
-  color: #fff;
-  transition: background-color 0.4s;
+  /* landing.css */
 }
-.submit-button {
-  margin: 16px 0 0 16px;
-  border: none;
-  border-radius: 16px;
-  padding: 8px 16px;
-  background-color: rgba(40, 100, 105, 1);
-  color: #fff;
-  transition: background-color 0.4s;
-}
-
 .search__btn:hover {
-  background-color: black;
-  cursor: pointer;
+  /* landing.css */
 }
 
 .search__overlay {
@@ -79,20 +51,20 @@
   height: 100%;
 }
 
-.search .search__results {
+/* .search .search__results {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
 
   max-height: 100%;
-  margin: 32px;
-}
+} */
 
 .container {
   display: flex;
-  height: 100vh;
-  background-color: blue;
+  height: 100%;
+  background-color: rgba(220, 220, 220, 0.5);
+  border: 1px dotted gray;
 }
 
 .testing {
@@ -100,10 +72,16 @@
   height: 100%;
 }
 
-/* .map {
+.map {
   min-width: 200px;
   max-height: 100%;
-} */
+}
+
+.search__results {
+  min-width: 300px;
+  border: 1px dotted gray;
+  margin: 0;
+}
 
 .search__results-container {
   list-style: none;
@@ -111,13 +89,13 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 8px;
   max-width: 1050px;
 }
 
 /* card  */
 .search__result {
-  margin: 16px;
+  margin: 0;
   position: relative;
   width: 100%;
   height: 320px;

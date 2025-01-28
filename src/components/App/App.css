@@ -16,3 +16,21 @@
   background: rgba(40, 100, 105, 1);
   color: #fff; /* Black */
 }
+
+/* Customizing the scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /*#f1f1f1; */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
