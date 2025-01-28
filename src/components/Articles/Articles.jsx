@@ -1,3 +1,4 @@
+import Carousel from "../Carousel/Carousel";
 import "./Articles.css";
 
 function Articles() {
@@ -9,7 +10,30 @@ function Articles() {
           The latest emergency alerts in your area
         </p>
       </div>
-      <ul className="articles__cards-container">
+      <Carousel slideCount={3}>
+        {/* feel free to mess around with this */}
+        <div className="articles__card">
+          <h3 className="atricle__title">Article Title</h3>
+          <p className="article__content">Article content.</p>
+        </div>
+        <div className="articles__card">
+          <h3 className="atricle__title">Article Title</h3>
+          <p className="article__content">Article content.</p>
+        </div>
+        <div className="articles__card">
+          <h3 className="atricle__title">Article Title</h3>
+          <p className="article__content">Article content.</p>
+        </div>
+        <div className="articles__card">
+          <h3 className="atricle__title">Article Title</h3>
+          <p className="article__content">Article content.</p>
+        </div>
+        <div className="articles__card">
+          <h3 className="atricle__title">Article Title</h3>
+          <p className="article__content">Article content.</p>
+        </div>
+      </Carousel>
+      {/* <ul className="articles__cards-container">
         <li className="articles__card">
           <h3 className="atricle__title">Article Title</h3>
           <p className="article__content">Article content.</p>
@@ -30,7 +54,7 @@ function Articles() {
           <h3 className="atricle__title">Article Title</h3>
           <p className="article__content">Article content.</p>
         </li>
-      </ul>
+      </ul> */}
     </section>
   );
 }
