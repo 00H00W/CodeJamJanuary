@@ -66,12 +66,12 @@
 
 .link-2 {
   animation-name: fadeInRight-2;
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 
 .link-3 {
   animation-name: fadeInRight-3;
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 
 @keyframes fadeInRight-1 {
