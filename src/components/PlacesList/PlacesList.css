@@ -1,0 +1,14 @@
+.places-list {
+  margin: 8px 4px;
+  padding: 8px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  border-radius: 16px;
+  border: 2px solid rgba(40, 100, 105, 1);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 1050px;
+  max-height: inherit;
+}
