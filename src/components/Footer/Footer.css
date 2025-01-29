@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.footer__person-container {
+.people {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -13,29 +13,29 @@
   padding: 0;
 }
 
-.footer__person {
+.people__person {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 32px 0;
+  margin: 8px 0;
 }
 
-.footer__person-title {
+.people__person-name {
   margin: 0 0 8px 0;
 }
 
-.footer__person-link-container {
+.people__person-link-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0;
 }
 
-.footer__person-link {
+.people__person-link {
   margin: 16px 0 0;
 }
 
-.footer__person-link-img {
+.people__person-link-img {
   width: 16px;
   height: 16px;
   margin: 0 8px 0 0;
