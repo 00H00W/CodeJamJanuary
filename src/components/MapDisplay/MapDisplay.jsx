@@ -3,7 +3,7 @@ import { APIProvider, Map } from "@vis.gl/react-google-maps";
 
 function MapDisplay() {
   return (
-    <APIProvider apiKey={"AIzaSyBKsxB7SuZvOCJUCfWSsW9jkBRKtYBa0MY"}>
+    <APIProvider apiKey={"AIzaSyDtw4jIS0wrL1nl7HC50zDT-ZhMNx5Jb94"}>
       <div className="map-display">
         <Map
           defaultCenter={{ lat: 22.54992, lng: 0 }}
