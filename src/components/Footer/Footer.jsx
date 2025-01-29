@@ -1,6 +1,4 @@
 import "./Footer.css";
-import githubImage from "../../assets/git.png";
-import linkedinImage from "../../assets/linkedin.png";
 import FooterCard from "../FooterCard/FooterCard";
 
 function Footer() {
