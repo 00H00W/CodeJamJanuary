@@ -4,10 +4,17 @@
   background: #fff;
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(255, 255, 255);
   padding: 12px 12px;
   gap: 6px;
   transition: box-shadow 0.4s;
 }
+
+.search-card:hover {
+  cursor: pointer;
+  border: 2px solid rgba(40, 100, 105, 1);
+}
+
 .search__card-link {
   text-decoration: none;
   color: inherit;
