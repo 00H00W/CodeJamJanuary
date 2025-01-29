@@ -19,37 +19,41 @@ function Search({ searchLocation, handleSearchChange }) {
 
   return (
     <section className="search">
-      {/* {console.log("Draw")} */}
-      <div className="search__container">
-        <form onSubmit={handleSubmit} action="" className="search__form_test">
-          <label htmlFor="search-input" className="form__label">
-            Your Location:
-            <input
-              onChange={handleSearchChange}
-              value={searchLocation}
-              className="text__input"
-              required
-              type="text"
-              placeholder="los angeles"
-              id="search-input"
-            />
-          </label>
-          <button
-            type="submit"
-            htmlFor="search-input"
-            className="search__btn"
-            //   onClick={handleSubmit}
-          >
-            Search
-          </button>
-        </form>
-      </div>
-
-      <div className="container">
-        <div className="testing">
-          <MapDisplay className="map" />
+      <div className="search__column-container">
+        <div className="search__map">
+          <MapDisplay />
         </div>
-        <div className="search__results">
+        <div className="search__menu">
+          <div className="search__form">
+            <form
+              onSubmit={handleSubmit}
+              action=""
+              className="search__form_test"
+            >
+              <label htmlFor="search-input" className="search__form-label">
+                Your Location:
+                <span className="search__search-bar">
+                  <input
+                    onChange={handleSearchChange}
+                    value={searchLocation}
+                    className="search__form-input"
+                    required
+                    type="text"
+                    placeholder="los angeles"
+                    id="search-input"
+                  />
+                  <button
+                    type="submit"
+                    htmlFor="search-input"
+                    className="search__form-submit"
+                    //   onClick={handleSubmit}
+                  >
+                    Search
+                  </button>
+                </span>
+              </label>
+            </form>
+          </div>
           <ul className="search__results-container">
             {/* {shelterData.map((item, index) => {
             return <div key={index}>{item}</div>;
