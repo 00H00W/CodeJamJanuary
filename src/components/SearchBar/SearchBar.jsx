@@ -1,6 +1,6 @@
 import "./SearchBar.css";
 
-function SearchBar({ searchLocation, handleSearchChange, handleSubmit }) {
+function SearchBar({ searchLocation, handleSearchChange, handleSubmit, input }) {
   return (
     <div className="search-bar">
       <form onSubmit={handleSubmit} action="" className="search-bar__form">
@@ -10,7 +10,7 @@ function SearchBar({ searchLocation, handleSearchChange, handleSubmit }) {
         <span className="search-bar__border">
           <input
             onChange={handleSearchChange}
-            value={searchLocation}
+            value={input}
             className="search-bar__form-input"
             required
             type="text"

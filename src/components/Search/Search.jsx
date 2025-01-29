@@ -1,21 +1,20 @@
 import "./Search.css";
 import React from "react";
-import { search, data } from "../../Utils/ShelterAPI";
 import MapDisplay from "../MapDisplay/MapDisplay";
-import SearchCard from "../SearchCard/SearchCard";
+import Preloader from "../PreLoader/PreLoader";
+import NothingFound from "../NothingFound/NothingFound";
+import PlacesList from "../PlacesList/PlacesList";
 
-function Search({ searchLocation, handleSearchChange }) {
-  const [shelterData, setShelterData] = React.useState([]);
+function Search({ searchLocation, handleSearchChange, handleSearch, searchResults, loading, input }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-    search();
-    setShelterData(data);
+    const trimmedInput = input.trim();
+    if (!trimmedInput) {
+      setErrorMessage("Please enter a keyword");
+    } else {
+      handleSearch(trimmedInput);
+    }
   };
-
-  React.useEffect(() => {
-    // console.log("Hello!");
-    setShelterData(data);
-  }, []);
 
   return (
     <section className="search">
@@ -35,7 +34,7 @@ function Search({ searchLocation, handleSearchChange }) {
                 <span className="search__search-bar">
                   <input
                     onChange={handleSearchChange}
-                    value={searchLocation}
+                    value={input}
                     className="search__form-input"
                     required
                     type="text"
@@ -45,8 +44,7 @@ function Search({ searchLocation, handleSearchChange }) {
                   <button
                     type="submit"
                     htmlFor="search-input"
-                    className="search__form-submit"
-                    //   onClick={handleSubmit}
+                    className="search__form-submit"                    
                   >
                     Search
                   </button>
@@ -54,12 +52,20 @@ function Search({ searchLocation, handleSearchChange }) {
               </label>
             </form>
           </div>
-          <ul className="search__results-container">
-            <SearchCard />
-            <SearchCard />
-            <SearchCard />
-            <SearchCard />
-          </ul>
+          {loading ? (
+            <Preloader />
+          ) : (
+            <>
+              {searchLocation && searchResults.length === 0 && <NothingFound />}
+              {searchResults.length > 0 && (
+                <section className="cards">
+                  <div className="search__results">
+                    <PlacesList places={searchResults} />
+                  </div>
+                </section>
+              )}
+            </>
+          )}
         </div>
       </div>
     </section>

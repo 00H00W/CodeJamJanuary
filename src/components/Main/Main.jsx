@@ -1,22 +1,39 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, {useState, useCallback} from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Articles from "../Articles/Articles";
 import Search from "../Search/Search";
 import Landing from "../Landing/Landing";
-import MapDisplay from "../MapDisplay/MapDisplay";
+import { search } from "../../utils/getPlaces";
 import "./Main.css";
 
 function Main() {
   const [searchLocation, setSearchLocation] = React.useState("");
-  const [searchResults, setSearchResults] = React.useState();
+  const [searchResults, setSearchResults] = React.useState([]);
+  const [loading, setLoading] = useState(false);
+  const [input, setInput] = useState("");
+  const navigate = useNavigate();
 
   const handleSearchChange = (e) => {
-    setSearchLocation(e.target.value);
+    setInput(e.target.value);
   };
-  const handleSearchSubmit = () => {
-    // this is where the shelter API is called with searchLocation
-    // resulting data is passed into a useState
-  };
+
+  const handleSearch = useCallback(async (searchLocation) => {
+    if (!searchLocation) return; // Prevent unnecessary API calls
+
+    setLoading(true);
+    setSearchLocation(searchLocation);
+    localStorage.setItem("lastSearchTerm", searchLocation);
+
+    try {
+      const fetchedPlaces = await search(searchLocation);
+      setSearchResults(fetchedPlaces);
+      navigate("/search");
+    } catch (error) {
+      console.error("Error in handleSearch:", error);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
 
   return (
     <main>
@@ -27,7 +44,8 @@ function Main() {
             <Landing
               searchLocation={searchLocation}
               handleSearchChange={handleSearchChange}
-              handleSearchSubmit={handleSearchSubmit}
+              handleSearch={handleSearch}
+              input={input}
             />
           }
         />
@@ -37,6 +55,10 @@ function Main() {
             <Search
               searchLocation={searchLocation}
               handleSearchChange={handleSearchChange}
+              handleSearch={handleSearch}
+              searchResults={searchResults}
+              loading={loading}
+              input={input}
             />
           }
         />
