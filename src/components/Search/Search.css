@@ -83,3 +83,18 @@
   max-width: 1050px;
   max-height: inherit;
 }
+
+@media (max-width: 589px) {
+  .search {
+    height: fit-content;
+  }
+
+  .search__column-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search__map {
+    visibility: hidden;
+  }
+}
