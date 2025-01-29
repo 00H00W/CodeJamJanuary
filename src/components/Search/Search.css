@@ -21,6 +21,7 @@
   width: 400px;
   display: flex;
   flex-direction: column;
+  max-height: 100%;
 }
 
 .search__form {
@@ -69,75 +70,16 @@
 }
 
 .search__results-container {
+  margin: 8px 4px;
+  padding: 8px;
   overflow-y: scroll;
   scrollbar-width: none;
-  margin: 8px 4px;
   border-radius: 16px;
   border: 2px solid rgba(40, 100, 105, 1);
   list-style: none;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 32px;
+  gap: 8px;
   max-width: 1050px;
-}
-
-/* Card (move to seperate component) */
-.search__result {
-  position: relative;
-  width: 240px;
-  height: 320px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.4s;
-}
-
-.search__result:hover {
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
-.search__result-name {
-  padding: 0 0 0 16px;
-}
-
-.search__result-address-title,
-.search__result-phone-title,
-.search__result-web-title {
-  padding: 0 16px 0 24px;
-  margin: 16px 0 0 0;
-}
-
-.search__result-address,
-.search__result-web,
-.search__result-phone-num {
-  padding: 0 16px 0 32px;
-  margin: 0 0 0 0;
-}
-
-.search__result-web {
-  position: absolute;
-  bottom: 16px;
-  padding: 16px;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(-16px);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.search__result {
-  animation: bounce 0.4s ease-in-out;
+  max-height: inherit;
 }
