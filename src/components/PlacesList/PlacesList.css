@@ -12,3 +12,18 @@
   max-width: 1050px;
   max-height: inherit;
 }
+
+.places-list__button {
+  margin: 2px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: rgba(40, 100, 105, 1);
+  color: #fff;
+  transition: background-color 0.4s;
+  width: 100%;
+}
+.places-list__button:hover {
+  background-color: black;
+  cursor: pointer;
+}
