@@ -1,0 +1,27 @@
+.footer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 8px 0;
+}
+
+.footer-card__person-name {
+  margin: 0 0 4px 0;
+}
+
+.footer-card__person-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.footer-card__person-link {
+  margin: 8px 4px 0;
+}
+
+.footer-card__person-link-img {
+  width: 16px;
+  height: 16px;
+  margin: 0 2px 0 0;
+}
