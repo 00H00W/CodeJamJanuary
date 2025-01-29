@@ -1,15 +1,18 @@
 import "./Landing.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { search } from "../../Utils/ShelterAPI";
 import SearchBar from "../SearchBar/SearchBar";
+import { search } from "../../utils/getPlaces";
 
-function Landing({ searchLocation, handleSearchChange }) {
-  const navigate = useNavigate();
+function Landing({ searchLocation, handleSearchChange, handleSearch, input }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-    search();
-    navigate("/search");
+    const trimmedInput = input.trim();
+    if (!trimmedInput) {
+      setErrorMessage("Please enter a keyword");
+    } else {
+      handleSearch(trimmedInput);
+    }
   };
 
   return (
@@ -25,6 +28,7 @@ function Landing({ searchLocation, handleSearchChange }) {
             handleSubmit={handleSubmit}
             handleSearchChange={handleSearchChange}
             searchLocation={searchLocation}
+            input={input}
           />
         </div>
       </div>

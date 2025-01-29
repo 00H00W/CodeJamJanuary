@@ -1,14 +1,18 @@
 import "./SearchCard.css";
 
-function SearchCard() {
+function SearchCard({place}) {
   return (
     <li className="search-card">
-      <h3 className="search-card__title">Shelter Name</h3>
-      <p className="search-card__label">Address:</p>
-      <p className="search-card__value">42 Wallaby Way, Sydney</p>
-      <p className="search-card__label">Phone:</p>
-      <p className="search-card__value">(555) 012-3456</p>
+      <a className="search__card-link" href={place.websiteUri} target="_blank" rel="noopener noreferrer">
+        <h3 className="search-card__title">{place.displayName.text}</h3>
+        <p className="search-card__label">Address:</p>
+        <p className="search-card__value">{place.formattedAddress}</p>
+        <p className="search-card__label">Phone:</p>
+        <p className="search-card__value">{place.nationalPhoneNumber}</p>
+      </a>
     </li>
+
+    
   );
 }
 

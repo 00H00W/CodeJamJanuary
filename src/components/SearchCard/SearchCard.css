@@ -8,6 +8,10 @@
   gap: 6px;
   transition: box-shadow 0.4s;
 }
+.search__card-link {
+  text-decoration: none;
+  color: inherit;
+}
 
 .search-card__title {
   margin: 0;
