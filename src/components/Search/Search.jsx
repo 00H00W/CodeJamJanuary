@@ -5,7 +5,14 @@ import Preloader from "../PreLoader/PreLoader";
 import NothingFound from "../NothingFound/NothingFound";
 import PlacesList from "../PlacesList/PlacesList";
 
-function Search({ searchLocation, handleSearchChange, handleSearch, searchResults, loading, input }) {
+function Search({
+  searchLocation,
+  handleSearchChange,
+  handleSearch,
+  searchResults,
+  loading,
+  input,
+}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const trimmedInput = input.trim();
@@ -20,7 +27,7 @@ function Search({ searchLocation, handleSearchChange, handleSearch, searchResult
     <section className="search">
       <div className="search__column-container">
         <div className="search__map">
-          <MapDisplay />
+          <MapDisplay results={searchResults} />
         </div>
         <div className="search__menu">
           <div className="search__form">
@@ -44,7 +51,7 @@ function Search({ searchLocation, handleSearchChange, handleSearch, searchResult
                   <button
                     type="submit"
                     htmlFor="search-input"
-                    className="search__form-submit"                    
+                    className="search__form-submit"
                   >
                     Search
                   </button>
@@ -56,13 +63,10 @@ function Search({ searchLocation, handleSearchChange, handleSearch, searchResult
             <Preloader />
           ) : (
             <>
+              {console.log(searchResults)}
               {searchLocation && searchResults.length === 0 && <NothingFound />}
               {searchResults.length > 0 && (
-                <section className="cards">
-                  <div className="search__results">
-                    <PlacesList places={searchResults} />
-                  </div>
-                </section>
+                <PlacesList places={searchResults} />
               )}
             </>
           )}
