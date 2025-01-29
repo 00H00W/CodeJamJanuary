@@ -2,10 +2,10 @@ import fs from "fs";
 import path from "path";
 
 const articleFileNames = [
-  "/articles.txt",
-  "/articles1.txt",
-  "/articles2.txt",
-  "/articles3.txt"
+  "./articles.txt",
+  "./articles1.txt",
+  "./articles2.txt",
+  "./articles3.txt"
 ];
 
 function joinPaths(...paths) {
