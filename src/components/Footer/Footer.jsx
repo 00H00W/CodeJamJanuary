@@ -12,7 +12,7 @@ function Footer() {
               className="people__person-link text-link"
             >
               <img
-                src="/src/assets/3.jpeg"
+                src="/src/assets/git.png"
                 alt="GitHubImg"
                 className="people__person-link-img"
               />
@@ -25,7 +25,7 @@ function Footer() {
               className="people__person-link text-link"
             >
               <img
-                src="/src/assets/3.jpeg"
+                src="/src/assets/linkedin.png"
                 alt="LinkedInImg"
                 className="people__person-link-img"
               />
@@ -41,7 +41,7 @@ function Footer() {
               className="people__person-link text-link"
             >
               <img
-                src="/src/assets/3.jpeg"
+                src="/src/assets/git.png"
                 alt="GitHubImg"
                 className="people__person-link-img"
               />
@@ -54,7 +54,7 @@ function Footer() {
               className="people__person-link text-link"
             >
               <img
-                src="/src/assets/3.jpeg"
+                src="/src/assets/linkedin.png"
                 alt="LinkedInImg"
                 className="people__person-link-img"
               />
@@ -70,7 +70,7 @@ function Footer() {
               className="people__person-link text-link"
             >
               <img
-                src="/src/assets/3.jpeg"
+                src="/src/assets/git.png"
                 alt="GitHubImg"
                 className="people__person-link-img"
               />
@@ -83,7 +83,7 @@ function Footer() {
               className="people__person-link text-link"
             >
               <img
-                src="/src/assets/3.jpeg"
+                src="/src/assets/linkedin.png"
                 alt="LinkedInImg"
                 className="people__person-link-img"
               />
@@ -99,7 +99,7 @@ function Footer() {
               className="people__person-link text-link"
             >
               <img
-                src="/src/assets/3.jpeg"
+                src="/src/assets/git.png"
                 alt="GitHubImg"
                 className="people__person-link-img"
               />
@@ -112,7 +112,7 @@ function Footer() {
               className="people__person-link text-link"
             >
               <img
-                src="/src/assets/3.jpeg"
+                src="/src/assets/linkedin.png"
                 alt="LinkedInImg"
                 className="people__person-link-img"
               />
