@@ -24,9 +24,10 @@ This project was fun and challenging. We used minimal media queries as mostly th
 
 Sh3ltr is a site of resource for shelter and news when disasters happen. Using the FEMA API people can locate shelter in a time of need. The site is designed to function on any browser- mobile or desktop. No need to install special extensions. Plans to improve the project includes adding additional resources (food, pet support, parking, etc), community postings.
 
-# Github Link
+# Deployment
 
-[https://github.com/00H00W/CodeJamJanuary]
+- [GH Pages link](https://00h00w.github.io/CodeJamJanuary/)
+- [GH Repo link](https://github.com/00H00W/CodeJamJanuary) - `npm run dev` to start the project.
 
 # Images and Screenshots
 
