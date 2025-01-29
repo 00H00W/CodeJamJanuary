@@ -1,6 +1,6 @@
 .page {
   min-width: 360px;
-  min-height: 100vh;
+  max-height: 100vh;
   font-family: "Poppins", serif;
   font-weight: 200;
   font-style: normal;
