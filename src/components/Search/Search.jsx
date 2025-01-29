@@ -27,7 +27,7 @@ function Search({
     <section className="search">
       <div className="search__column-container">
         <div className="search__map">
-          <MapDisplay />
+          <MapDisplay results={searchResults} />
         </div>
         <div className="search__menu">
           <div className="search__form">
@@ -63,6 +63,7 @@ function Search({
             <Preloader />
           ) : (
             <>
+              {console.log(searchResults)}
               {searchLocation && searchResults.length === 0 && <NothingFound />}
               {searchResults.length > 0 && (
                 <PlacesList places={searchResults} />

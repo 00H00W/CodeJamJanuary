@@ -7,9 +7,10 @@ import {
 } from "@vis.gl/react-google-maps";
 import React from "react";
 
-function MapDisplay() {
+function MapDisplay({ results }) {
   const [openMarkerIndex, setOpenMarkerIndex] = React.useState();
   const [position, setPosition] = React.useState();
+  const [centerPosition, setCenter] = React.useState();
 
   React.useEffect(() => {
     if (navigator.geolocation) {
@@ -42,25 +43,28 @@ function MapDisplay() {
               gestureHandling={"greedy"}
               disableDefaultUI={true}
             />
-            {testPoints.map((item, index) => (
+            {results.map((item, index) => (
               <div key={index}>
                 {/* AdvancedMarker */}
                 <AdvancedMarker
-                  position={item}
+                  position={{
+                    lat: item.location.latitude,
+                    lng: item.location.longitude,
+                  }}
                   onClick={() => setOpenMarkerIndex(index)}
                 ></AdvancedMarker>
 
                 {/* Conditionally render InfoWindow */}
                 {openMarkerIndex === index && (
                   <InfoWindow
-                    position={item}
+                    position={{
+                      lat: item.location.latitude,
+                      lng: item.location.longitude,
+                    }}
                     onCloseClick={() => setOpenMarkerIndex(null)}
                   >
                     <div>
-                      <h3>
-                        {item.lat}, {item.lng}
-                      </h3>
-                      <p>{item.name}</p>
+                      <h3>{item.displayName.text}</h3>
                     </div>
                   </InfoWindow>
                 )}
