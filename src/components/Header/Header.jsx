@@ -20,11 +20,12 @@ function Header() {
               Articles
             </NavLink>
           </li>
-          <li>
+          {/* link to element id is broken */}
+          {/* <li>
             <a href="#nav-contact-target" className="nav__link text-link">
               Contact Us
             </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
