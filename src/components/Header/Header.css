@@ -3,24 +3,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
   height: 48px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(240, 240, 240, 1) 100%
-  );
   box-shadow: rgba(0, 0, 0, 0.3);
   font-weight: 200;
 }
 
 .header__logo {
-  background-image: url("../../assets/3.jpeg");
+  background-image: url("../../assets/3.png");
   background-position: center;
   background-size: cover;
-  height: 40px;
-  width: 40px;
-  opacity: 0.7;
-  margin: 4px;
+  height: 24px;
+  width: 24px;
+  margin: 8px;
 }
 
 .nav__links {
@@ -30,19 +23,25 @@
   list-style: none;
   padding: 0;
   margin-right: 5vw;
+  user-select: none;
 }
 
+.text-link {
+  text-decoration: none;
+  color: rgba(40, 100, 105, 1);
+  transition: color 0.4s, text-shadow 0.4s;
+}
+
+.text-link:hover {
+  color: black;
+  text-shadow: 3px 3px 10px rgba(40, 100, 105, 0.5);
+}
 .nav__link {
   text-wrap: nowrap;
   margin: 0 16px;
   width: 64px;
-  text-decoration: none;
-  opacity: 0.7;
-  color: rgba(40, 100, 105, 1);
-  transition: color 0.4s;
+  font-weight: 100;
 }
-
-.nav__link:hover {
-  color: black;
-  text-shadow: 3px 3px 10px rgba(40, 100, 105, 0.5);
+.nav__link_active {
+  border-bottom: 4px solid rgba(40, 100, 105, 1);
 }

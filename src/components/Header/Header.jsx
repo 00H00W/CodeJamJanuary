@@ -1,23 +1,27 @@
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
+  const customClassName = ({ isActive }) =>
+    "text-link nav__link" + (isActive ? " nav__link_active" : "");
+
   return (
     <header className="header">
-      <div className="header__logo"></div>
+      <NavLink className="header__logo" to={"/"}></NavLink>
       <nav className="nav">
         <ul className="nav__links">
           <li>
-            <a href="#nav-search-target" className="nav__link">
+            <NavLink className={customClassName} to={"/search"}>
               Search
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#nav-articles-target" className="nav__link">
+            <NavLink className={customClassName} to={"/articles"}>
               Articles
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#nav-contact-target" className="nav__link">
+            <a href="#nav-contact-target" className="nav__link text-link">
               Contact Us
             </a>
           </li>
