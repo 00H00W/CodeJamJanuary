@@ -19,7 +19,8 @@ To run site locally:
 
 # Github Link
 
-[https://github.com/00H00W/CodeJamJanuary]
+- [GH Repository](https://github.com/00H00W/CodeJamJanuary)
+- [GH pages link](https://00h00w.github.io/CodeJamJanuary/)
 
 # Images and Screenshots
 
