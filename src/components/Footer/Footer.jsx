@@ -1,4 +1,6 @@
 import "./Footer.css";
+import githubImage from "../../assets/git.png";
+import linkedinImage from "../../assets/linkedin.png";
 
 function Footer() {
   return (
@@ -12,7 +14,7 @@ function Footer() {
               className="people__person-link text-link"
             >
               <img
-                src="/src/assets/git.png"
+                src={githubImage}
                 alt="GitHubImg"
                 className="people__person-link-img"
               />
@@ -25,7 +27,7 @@ function Footer() {
               className="people__person-link text-link"
             >
               <img
-                src="/src/assets/linkedin.png"
+                src={linkedinImage}
                 alt="LinkedInImg"
                 className="people__person-link-img"
               />
@@ -57,6 +59,64 @@ function Footer() {
                 src="/src/assets/linkedin.png"
                 alt="LinkedInImg"
                 className="people__person-link-img"
+              />
+              LinkedIn
+            </a>
+          </div>
+        </li>
+        <li className="footer__person">
+          <h4 className="footer__person-title">Juan Alcantara</h4>
+          <div className="footer__person-link-container">
+            <a
+              href="https://github.com/jcalcan"
+              className="footer__person-link text-link"
+            >
+              <img
+                src="/src/assets/3.jpeg"
+                alt="GitHubImg"
+                className="footer__person-link-img"
+              />
+              GitHub
+            </a>
+          </div>
+          <div className="footer__person-link-container">
+            <a
+              href="https://www.linkedin.com/in/juan-alcantara-9aa502301/"
+              className="footer__person-link text-link"
+            >
+              <img
+                src="/src/assets/3.jpeg"
+                alt="LinkedInImg"
+                className="footer__person-link-img"
+              />
+              LinkedIn
+            </a>
+          </div>
+        </li>
+        <li className="footer__person">
+          <h4 className="footer__person-title">Gerard Ike</h4>
+          <div className="footer__person-link-container">
+            <a
+              href="https://github.com/gerard415"
+              className="footer__person-link text-link"
+            >
+              <img
+                src="/src/assets/3.jpeg"
+                alt="GitHubImg"
+                className="footer__person-link-img"
+              />
+              GitHub
+            </a>
+          </div>
+          <div className="footer__person-link-container">
+            <a
+              href="https://www.linkedin.com/in/chinedum-ike/"
+              className="footer__person-link text-link"
+            >
+              <img
+                src="/src/assets/3.jpeg"
+                alt="LinkedInImg"
+                className="footer__person-link-img"
               />
               LinkedIn
             </a>
