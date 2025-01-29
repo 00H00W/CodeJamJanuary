@@ -150,3 +150,109 @@
     padding: 0 0 32px 0;
   }
 }
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.people {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 64px;
+  padding: 0;
+}
+
+.people__person {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 8px 0;
+}
+
+.people__person-name {
+  margin: 0 0 4px 0;
+}
+
+.people__person-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.people__person-link {
+  margin: 8px 4px 0;
+}
+
+.people__person-link-img {
+  width: 16px;
+  height: 16px;
+  margin: 0 2px 0 0;
+}
+
+.footer__copyright {
+  margin: 0;
+  padding: 16px 0 8px;
+  opacity: 0.7;
+}
+
+@media (max-width: 625px) {
+  .people {
+    max-width: 400px;
+    gap: 32px;
+  }
+}
+
+/* PAGE */
+
+.page {
+  min-width: 360px;
+  min-height: 100vh;
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+  background: rgba(220, 220, 220, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 240, 240, 1) 0%,
+    rgba(200, 200, 220, 1) 100%
+  );
+  color: rgba(40, 100, 105, 1);
+  text-shadow: 1px 1px 5px rgba(220, 220, 220, 0.5);
+}
+
+::selection {
+  background: rgba(40, 100, 105, 1);
+  color: #fff; /* Black */
+}
+
+::-moz-selection {
+  background: rgba(40, 100, 105, 1);
+  color: #fff; /* Black */
+}
+
+/* Customizing the scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /*#f1f1f1; */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
