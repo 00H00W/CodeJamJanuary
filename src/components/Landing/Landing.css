@@ -1,3 +1,9 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero__header {
   position: relative;
   display: flex;
@@ -24,12 +30,6 @@
   height: 100%;
 }
 
-.search__form,
-.search__subtitle {
-  z-index: 1;
-  font-weight: 400;
-}
-
 .hero__title {
   font-size: 64px;
   margin: 160px 0 64px 0;
@@ -38,107 +38,16 @@
   z-index: 1;
 }
 
-.search__form {
-  display: flex;
-  flex-direction: column;
+.hero__subtitle {
+  z-index: 1;
+  font-weight: 400;
 }
 
-.search__input {
-  border: none;
-  border-radius: 16px;
-  padding: 8px 96px 8px 24px;
-  margin-left: 16px;
-}
-
-.search__btn {
-  width: 88px;
-  margin: 16px 0 0 0;
-  border: none;
-  border-radius: 16px;
-  padding: 8px 16px;
-  background-color: rgba(40, 100, 105, 1);
-  color: #fff;
-  transition: background-color 0.4s;
-}
-
-.search__btn:hover {
-  background-color: black;
-  cursor: pointer;
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.search__results-container {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 32px;
-  max-width: 1050px;
-}
-
-/* card  */
-.search__result {
-  position: relative;
-  width: 240px;
-  height: 320px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.4s;
-}
-
-.search__result:hover {
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
-.search__result-name {
-  padding: 0 0 0 16px;
-}
-
-.search__result-address-title,
-.search__result-phone-title,
-.search__result-web-title {
-  padding: 0 16px 0 24px;
-  margin: 16px 0 0 0;
-}
-
-.search__result-address,
-.search__result-web,
-.search__result-phone-num {
-  padding: 0 16px 0 32px;
-  margin: 0 0 0 0;
-}
-
-.search__result-web {
-  position: absolute;
-  bottom: 16px;
-  padding: 16px;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(-16px);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.search__result {
-  animation: bounce 0.4s ease-in-out;
+.hero__search-bar {
+  z-index: 1;
+  font-weight: 400;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 @media (max-width: 589px) {
