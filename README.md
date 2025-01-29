@@ -2,11 +2,6 @@
 
 Sh3ltr is a project to help disaster victims locate shelter when disaster happens. It was made with simple user accessability and useability in mind. The site displays the power of React + Vite, CSS and Google API's. All the elements display correctly on popular screen sizes using css grid, very minimal media queries and React. Enjoy.
 
-# Figma
-
-Link to project on Figma
-[https://www.figma.com/design/3ottwMEhlBt95Dbn8dw1NH/Your-Final-Project?node-id=0-1&p=f&t=GvA556duA0DAeTh0-0]
-
 # Tech Used
 
 We used minimal media queries as mostly the responsive design is made with css display flex, React + Vite and Google places and goecoding API. Using React + Vite helps site load faster using less Bandwith, server strain and mobile performance were all taken into account when designing the site.
@@ -40,7 +35,7 @@ The design and code were made with responsive and intuitive to users devices in 
 
 # Video Explanation of the project
 
-In this comprehensive video presentation, I showcase the responsive disaster shelter app project named 'Sh3ltr'. I walk through key aspects of the project, including its overview, layout and responsiveness, use of semantic HTML, implementation of the BEM methodology, CSS structure, React + Vite and personal challenges and learnings. I explain the project's intuitive design, use of CSS Flex for layout, responsive design techniques, semantic HTML implementation, and the BEM approach to the project. I also discuss our problem-solving process and the valuable skills gained throughout the project's development. This video provides insights into modern web development practices and our growth journey. Enjoy. Link to the project on Youtube []
+In this comprehensive video presentation, I showcase the responsive disaster shelter app project named 'Sh3ltr'. I walk through key aspects of the project, including its overview, layout and responsiveness, use of semantic HTML, implementation of the BEM methodology, CSS structure, React + Vite and personal challenges and learnings. I explain the project's intuitive design, use of CSS Flex for layout, responsive design techniques, semantic HTML implementation, and the BEM approach to the project. I also discuss our problem-solving process and the valuable skills gained throughout the project's development. This video provides insights into modern web development practices and our growth journey. Enjoy.
 
 Good luck and have fun!
 
