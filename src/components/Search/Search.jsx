@@ -2,7 +2,7 @@ import "./Search.css";
 import React from "react";
 import { search, data } from "../../Utils/ShelterAPI";
 import MapDisplay from "../MapDisplay/MapDisplay";
-import Carousel from "../Carousel/Carousel";
+import SearchCard from "../SearchCard/SearchCard";
 
 function Search({ searchLocation, handleSearchChange }) {
   const [shelterData, setShelterData] = React.useState([]);
@@ -55,51 +55,10 @@ function Search({ searchLocation, handleSearchChange }) {
             </form>
           </div>
           <ul className="search__results-container">
-            {/* {shelterData.map((item, index) => {
-            return <div key={index}>{item}</div>;
-          })} */}
-            <li className="search__result">
-              <h3 className="search__result-name">Community Shelter</h3>
-              <p className="search__result-address-title">Address:</p>
-              <p className="search__result-address">42 Wallaby Way, Sydney</p>
-              <p className="search__result-phone-title">Phone:</p>
-              <p className="search__result-phone-num">(555) 012-3456</p>
-            </li>
-            <li className="search__result">
-              <h3 className="search__result-name">Community Shelter</h3>
-              <p className="search__result-address-title">Address:</p>
-              <p className="search__result-address">42 Wallaby Way, Sydney</p>
-              <p className="search__result-phone-title">Phone:</p>
-              <p className="search__result-phone-num">(555) 012-3456</p>
-            </li>
-            <li className="search__result">
-              <h3 className="search__result-name">Community Shelter</h3>
-              <p className="search__result-address-title">Address:</p>
-              <p className="search__result-address">42 Wallaby Way, Sydney</p>
-              <p className="search__result-phone-title">Phone:</p>
-              <p className="search__result-phone-num">(555) 012-3456</p>
-            </li>
-            <li className="search__result">
-              <h3 className="search__result-name">Community Shelter</h3>
-              <p className="search__result-address-title">Address:</p>
-              <p className="search__result-address">42 Wallaby Way, Sydney</p>
-              <p className="search__result-phone-title">Phone:</p>
-              <p className="search__result-phone-num">(555) 012-3456</p>
-            </li>
-            <li className="search__result">
-              <h3 className="search__result-name">Community Shelter</h3>
-              <p className="search__result-address-title">Address:</p>
-              <p className="search__result-address">42 Wallaby Way, Sydney</p>
-              <p className="search__result-phone-title">Phone:</p>
-              <p className="search__result-phone-num">(555) 012-3456</p>
-            </li>
-            <li className="search__result">
-              <h3 className="search__result-name">Community Shelter</h3>
-              <p className="search__result-address-title">Address:</p>
-              <p className="search__result-address">42 Wallaby Way, Sydney</p>
-              <p className="search__result-phone-title">Phone:</p>
-              <p className="search__result-phone-num">(555) 012-3456</p>
-            </li>
+            <SearchCard />
+            <SearchCard />
+            <SearchCard />
+            <SearchCard />
           </ul>
         </div>
       </div>
